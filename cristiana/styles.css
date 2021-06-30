@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: rgb(28, 122, 83);
+    height: 5em;
+}
+
+header p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin: 0.1em;
+}

@@ -60,3 +60,37 @@ document.write(cat.printAnimalName());
 var dog = new Animal("Max", "dog", "brown", 20, 12);
 document.write("<br>");
 document.write(dog.printAnimalName());
+
+var horse = new Animal("Chubby", "horse", "white", 300, 6);
+document.write("<br>");
+document.write(horse.printAnimalName());
+
+// persons
+
+class Person {
+    name;
+    age;
+    weight;
+    
+    constructor (a, b, c) {
+        this.name = a;
+        this.age = b;
+        this.weight = c;
+    }
+
+    printPersonName() {
+        return "My name is " +  this.name + " and I am " + this.age + " years old";
+    }
+}
+
+var ana = new Person ("Ana", 25, 55);
+document.write("<br>");
+document.write(ana.printPersonName());
+
+var maria = new Person ("Maria", 45, 80);
+document.write("<br>");
+document.write(maria.printPersonName());
+
+var daniel = new Person ("Daniel", 15, 60);
+document.write("<br>");
+document.write(daniel.printPersonName());
