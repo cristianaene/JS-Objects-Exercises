@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: rgb(248, 250, 248);
 }
 header {
     background-color: rgb(28, 122, 83);
@@ -11,4 +12,28 @@ header p {
     font-size: 4em;
     text-align: center;
     margin: 0.1em;
+    border-top: 0.05em solid black;
+    border-bottom: 0.05em solid black;
+}
+
+.container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.container div {
+    text-align: center;
+}
+
+#hotelimg {
+    max-width: 30em;
+    margin: 2em;
+    border-radius: 0.2em;
+}
+
+
+footer {
+    height: 3em;
+    background-color: rgb(28, 122, 83);
+    border-top: 0.05em solid black;
 }

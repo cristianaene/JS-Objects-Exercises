@@ -91,3 +91,49 @@ var tuna = new Fish ("Tuna", "fish", "gray", 15, 3, "ocean");
 document.write("<br>");
 document.write(tuna.printAnimalName());
 document.write(tuna.printTypeOfWater());
+
+
+// Person
+
+class Person {
+    name;
+    age;
+    weight;
+
+    constructor (a, b, c) {
+        this.name = a;
+        this.age = b;
+        this.weight = c;
+    }
+
+    printPersonName() {
+        return "My name is " +  this.name + " and I am " + this.age + " years old";
+    }
+}
+
+class Profession extends Person {
+    profession;
+    constructor (a, b, c, d) {
+        super (a, b, c);
+        this.profession = d;
+    }
+
+    printTypeOfProfession() {
+        return " and my profession is " + this.profession;
+    }
+}
+
+var programmer = new Profession ("Ana", 25, 60, "programmer");
+document.write("<br>");
+document.write(programmer.printPersonName());
+document.write(programmer.printTypeOfProfession());
+
+var doctor = new Profession ("Maria", 45, 80, "doctor");
+document.write("<br>");
+document.write(doctor.printPersonName());
+document.write(doctor.printTypeOfProfession());
+
+var student = new Profession ("Daniel", 15, 60, "student");
+document.write("<br>");
+document.write(student.printPersonName());
+document.write(student.printTypeOfProfession());
